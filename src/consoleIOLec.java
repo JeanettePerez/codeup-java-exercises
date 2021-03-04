@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class consoleIOLec {
@@ -64,10 +65,10 @@ public class consoleIOLec {
             /* TODO: use the scanner to take in the name of the month you were born and print it back out
             - remember to first prompt the user for the input
          */
-            Scanner sc = new Scanner(System.in);
-            System.out.println("What is the name of the month you were born in?");
-            String userInput = sc.next();
-            System.out.println(userInput);
+//            Scanner sc = new Scanner(System.in);
+//            System.out.println("What is the name of the month you were born in?");
+//            String userInput = sc.next();
+//            System.out.println("You were born in " + userInput);
 
             // .next() captures each input separated by a string:
 //            System.out.print("Please enter your first, middle, and last name: ");
@@ -84,7 +85,7 @@ public class consoleIOLec {
 //            int age = sc.nextInt();
 //            System.out.println(age);
 
-            // .nextLine():
+//           //  .nextLine():
 //            System.out.print("Favorite quote: ");
 //            String quote = sc.nextLine();
 //            System.out.println(quote);
@@ -99,6 +100,20 @@ public class consoleIOLec {
 //            System.out.print("Please enter your favorite words: ");
 //            String words = sc.nextLine();
 //            System.out.println(words);
+            /* TODO: use the scanner to take in your birthday as an integer and then name of the month you were born and print it back out
+            - remember to first prompt the user for the birthday day of the month and store as an integer
+            - next take in name of the month with .nextLine()
+            - print out the result
+            - use a fix to prevent the month name input from being skipped
+         */
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Please enter the day of the month you were born: ");
+            int day = sc.nextInt();
+            System.out.println("Please enter the month you were born: ");
+            sc.nextLine();
+            String month = sc.nextLine();
+            System.out.println("You were born " + month + " " + day);
+
 
         }
 
