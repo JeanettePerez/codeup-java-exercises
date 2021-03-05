@@ -61,49 +61,49 @@ public class ControlFlowExercises {
 //            System.out.println(num);
 //        }
 //    }
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("What number would you like to go up to? ");
-//        int inputStart = sc.nextInt();
-//        System.out.println("number" + "|" + "squared" + "|" + "cubed");
-//        System.out.println("------" + "|" + "-------" + "|" + "-----");
-//        for(int row = 1; row <= inputStart; row++){
-//            int numberSquared = (int) Math.pow(row, 2);
-//            int numberCubed = (int) Math.pow(row, 3);
-//            System.out.println(row + "\t  " + "|" + numberSquared + "\t  " + "|" + numberCubed);
-//        }
-//        char choice = 'y';
-//        do{
-//        System.out.println("Continue? (Y/N)");
-//        choice = sc.next().charAt(0);
-//        }
-//        while (choice == 'n' || choice == 'N');
+        Scanner sc = new Scanner(System.in);
+        System.out.println("What number would you like to go up to? ");
+        int inputStart = sc.nextInt();
+        System.out.println("number" + "|" + "squared" + "|" + "cubed");
+        System.out.println("------" + "|" + "-------" + "|" + "-----");
+        for(int row = 1; row <= inputStart; row++){
+            int numberSquared = (int) Math.pow(row, 2);
+            int numberCubed = (int) Math.pow(row, 3);
+            System.out.println(row + "\t  " + "|" + numberSquared + "\t  " + "|" + numberCubed);
+        }
+        char choice = 'y';
+        do{
+        System.out.println("Continue? (Y/N)");
+        choice = sc.next().charAt(0);
+        }
+        while (choice == 'n' || choice == 'N');
 
 // grade Converter
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("What is your numerical grade: ");
-        double numGrade = sc.nextDouble();
-        char letterGrade = 'F';
-
-        if (numGrade >= 90)
-            letterGrade = 'A';
-        else if(numGrade >= 80)
-            letterGrade = 'B';
-        else if(numGrade >= 70)
-            letterGrade = 'C';
-        else if(numGrade >= 60)
-            letterGrade = 'D';
-
-        String message = ("Your letter Grade is a " + letterGrade);
-        while(true) {
-            if(numGrade >= 99) {
-                System.out.println(message + "+");
-                break;
-            }
-            else
-                System.out.println(message);
-                break;
-        }
+//        Scanner sc = new Scanner(System.in);
+//
+//        System.out.print("What is your numerical grade: ");
+//        double numGrade = sc.nextDouble();
+//        char letterGrade = 'F';
+//
+//        if (numGrade >= 88)
+//            letterGrade = 'A';
+//        else if(numGrade >= 80)
+//            letterGrade = 'B';
+//        else if(numGrade >= 67)
+//            letterGrade = 'C';
+//        else if(numGrade >= 60)
+//            letterGrade = 'D';
+//
+//        String message = ("Your letter Grade is a " + letterGrade);
+//        while(true) {
+//            if(numGrade >= 99) {
+//                System.out.println(message + "+");
+//                break;
+//            }
+//            else
+//                System.out.println(message);
+//                break;
+//        }
 
 
 
