@@ -9,7 +9,8 @@ import java.util.Scanner;
 //            secondChar("");
 //            lastChar("");
 //            secondToLastChar("");
-            userWantsToContinue("");
+           // userWantsToContinue("");
+            System.out.println(sum(10));
         }
 
         public static void firstChar(String input) {
@@ -59,6 +60,15 @@ import java.util.Scanner;
                 input = sc.next();
             }
             while (input.equalsIgnoreCase("N")) ;
+        }
+
+        // creating a method that return an int
+        public static int sum(int k) {
+            if(k > 0){
+                return k + sum(k - 1);
+            }else {
+                return 0;
+            }
         }
 
     }
