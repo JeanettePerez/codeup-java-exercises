@@ -4,17 +4,17 @@ package Oop;
 public class DishTest {
 
     public static void main(String[] args) {
-        Dish dish1 = new Dish();
-        dish1.nameOfDish = "sloppy Joe's";
-        dish1.costInCents = 1_500;
-        dish1.wouldRecommend = true;
+        var dish1 = new Dish();
+        dish1.setNameOfDish("sloppy Joe's");
+        dish1.setCostInCents(1300);
+        dish1.setWouldRecommend(true);
 
-        dish1.printSummary();
-        //dish1.centToDollars();
 
-        DishTools.shoutDishName();
-        DishTools.analyzeDishCost();
-        DishTools.flipRecommendation();
+        dish1.printSummary(dish1);
+        DishTools.shoutDishName(dish1);
+        DishTools.analyzeDishCost(dish1);
+        DishTools.flipRecommendation(dish1);
+
 
 
     }
