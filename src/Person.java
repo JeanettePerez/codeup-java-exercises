@@ -3,19 +3,24 @@ public class Person {
     private String name;
 
     public Person(String name) {
+    // TODO: create a constructor that accepts a 'String' value and sets the person's name to the passed string
         this.name = name;
     }
 
 
     public String getName() {
+    // TODO: return the person's name
         return name;
     }
+
     public void setName(String name) {
+    // TODO: change the name property to the passed value
         this.name = name;
     }
 
     public void sayHello() {
-        System.out.println("Hello, " + name);
+    // TODO: print a message to the console using the person's name
+        System.out.println(this.name + " say's hi");
     }
 
     public static void main(String[] args) {
