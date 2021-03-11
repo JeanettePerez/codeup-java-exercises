@@ -14,10 +14,21 @@ public class Input {
         return scanner.nextLine();
     }
 
-//    public boolean yesNo() {
-//
-//
-//    }
+    public String getString(String prompt) {
+        System.out.print(prompt);
+        return scanner.nextLine();
+    }
+
+    public boolean yesNo() {
+        System.out.println("would you like to continue? [Y]/[N]");
+        String userInput = scanner.next();
+        return (userInput.equalsIgnoreCase("Y") || userInput.equalsIgnoreCase("yes"));
+    }
+    public boolean yesNo(String prompt)  {
+        System.out.println(prompt);
+        String userInput = scanner.next();
+        return (userInput.equalsIgnoreCase("y") || userInput.equalsIgnoreCase("yes"));
+    }
 
     public int getInt(int min, int max) {
         int userInput = getInt();
@@ -36,9 +47,9 @@ public class Input {
     }
 
     double getDouble(double min, double max) {
-        double userInput = getDouble();
+        System.out.print("Enter number from  " + min + " and " + max + ": ");
+        double userInput = scanner.nextDouble();
         if(userInput < min || userInput > max){
-            System.out.println("Enter number from " + min + " and " + max);
             return getDouble(min, max);
         }
         else
