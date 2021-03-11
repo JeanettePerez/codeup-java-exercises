@@ -2,8 +2,6 @@ import java.util.Scanner;
 
 public class MethodExercises {
 
-    private static Scanner sc;
-
     public static void main(String[] args) {
 //        System.out.println(addition(2,3));
 //        System.out.println(subtraction(5,4));
@@ -57,19 +55,19 @@ public class MethodExercises {
 //        return input1 % input2;
 //    }
 
-//    public static int getInteger(int min, int max) {
-//        sc = new Scanner(System.in);
-//        int value;
-//
-//        do {
-//            System.out.print("Enter a number between " + min + " and " + max);
-//            value = sc.nextInt();
-//        } while (value <= min && value >= max);
-//        return value;
-//    }
+    public static int getInteger(int min, int max) {
+        Scanner sc = new Scanner(System.in);
+        int value;
+
+        do {
+            System.out.print("Enter a number between " + min + " and " + max);
+            value = sc.nextInt();
+        } while (value <= min && value >= max);
+        return value;
+    }
 //
 //    public static void userWantsToContinue() {
-//        sc = new Scanner(System.in);
+//        Scanner sc = new Scanner(System.in);
 //
 //        String input;
 //        do {
@@ -92,36 +90,24 @@ public class MethodExercises {
 //        userWantsToContinue("");
 //    }
 
-    public static int getRandomNumber(){
-        System.out.println("Enter the number of sides for a pair of dice: ");
-        int max = numberSideOfDice();
+    public static void diceGame() {
+        System.out.print("Enter the number of sides for a pair of dice: ");
+        Scanner sc = new Scanner(System.in);
+        int max = sc.nextInt();
         int min = 1;
         int range = max - min + 1;
-        int randomNumber = 0;
-
-
-        for(int i = 0; i <= max; i++)
-            randomNumber = (int) (Math.random() * range) + min;
-        return randomNumber;
-
-    }
-    public static void diceGame() {
-
-
-        int dice1 = getRandomNumber();
-        int dice2 = getRandomNumber();
-        System.out.println(dice1);
-        System.out.println(dice2);
+        int randomNumber1 = 0;
+        int randomNumber2 = 0;
+        for(int i = 0; i <= max; i++){
+            randomNumber1 = (int) (Math.random() * range) + min;
+            randomNumber2 = (int) (Math.random() * range) + min;
+        }
+        System.out.println("Dice 1: " + randomNumber1);
+        System.out.println("Dice 2: " + randomNumber2);
 
     }
 
-    public static void userInput(){
 
-    }
-    public static int numberSideOfDice() {
-        sc = new Scanner(System.in);
-       return sc.nextInt();
 
-    }
 
 }
