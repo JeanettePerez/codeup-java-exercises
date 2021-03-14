@@ -1,4 +1,4 @@
-package Oop;
+package lectures;
 
 public class OopLecture {
 
@@ -109,7 +109,7 @@ public class OopLecture {
 //            System.out.println(john.name + " - ");
 //            System.out.println(john.cohort); // prints "John Doe - Unassigned"
 
-
+                // used for assigning values to our instance variables
             // ======================== slide 9 (this keyword)
 
 //            Student jane = new Student("Jane Doe", "Zion");

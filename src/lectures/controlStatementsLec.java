@@ -1,3 +1,5 @@
+package lectures;
+
 public class controlStatementsLec {
 
     public static void main(String[] args) {

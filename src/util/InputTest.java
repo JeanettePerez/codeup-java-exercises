@@ -13,8 +13,8 @@ public class InputTest {
 //        System.out.println(intNumberRange);
 
 
-//        double numberRange = input1.getDouble(1,10);
-//        System.out.println(numberRange);
+        double numberRange = input1.getDouble(1,10);
+        System.out.println(numberRange);
 
 
 //        boolean willContinue = input1.yesNo("will like to continue?");

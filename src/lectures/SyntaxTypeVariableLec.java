@@ -1,3 +1,5 @@
+package lectures;
+
 public class SyntaxTypeVariableLec {
 
     public static void main(String[] args) {

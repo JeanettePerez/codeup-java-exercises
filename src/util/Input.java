@@ -38,7 +38,6 @@ public class Input {
             return getInt(min, max);
         }
         else
-            System.out.println("done!");
             return userInput;
     }
 
