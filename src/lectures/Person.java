@@ -2,7 +2,8 @@ package lectures;
 
 public class Person {
 
-    public String name;
+   public String name;
+
 
 
     public String getName() {

@@ -2,8 +2,16 @@ package miniExercises;
 import util.Input;
 
 public class Ingredients {
-    public boolean isHomemade;
-    public String locationOfPurchase;
+    public String nameOfIngredient;
+    private boolean isHomemade;
+    private String locationOfPurchase;
+    protected int calories;
+
+
+
+    public void throwAway() {
+        System.out.println("Throwing away");
+    }
 
     public boolean isHomemade() {
         return isHomemade;
@@ -13,25 +21,19 @@ public class Ingredients {
         isHomemade = homemade;
     }
 
-    public String getLocationOfPurchase() {
-        return locationOfPurchase;
-    }
 
     public void setLocationOfPurchase(String locationOfPurchase) {
         this.locationOfPurchase = locationOfPurchase;
     }
 
-    public String getNameOfIngredient() {
-        return nameOfIngredient;
-    }
 
     public void setNameOfIngredient(String nameOfIngredient) {
         this.nameOfIngredient = nameOfIngredient;
     }
 
-    public String nameOfIngredient;
 
    public void productionProcess(){
+        // adding more logic for input later
        if(locationOfPurchase.equalsIgnoreCase("store"))
            System.out.println(nameOfIngredient + " was made in a factory");
        else if (locationOfPurchase.equalsIgnoreCase("bakery"))
@@ -39,6 +41,8 @@ public class Ingredients {
        else
            System.out.println("undetermined production process");
    }
+
+
 
 
 
