@@ -11,7 +11,6 @@ public class Input {
     }
 
     public String getString() {
-
         return SCANNER.nextLine();
     }
 
@@ -43,9 +42,17 @@ public class Input {
 
     public int getInt() {
         System.out.print("Enter a number: ");
-        return SCANNER.nextInt();
-    }
+        //return SCANNER.nextInt();
+        String input = this.getString();
+        try {
+            return Integer.valueOf(input);
+        } catch (Exception e) {
+            System.out.println("Invalid Input");
+            return getInt();
+        }
 
+
+    }
 
     public double getDouble(double min, double max) {
         double userInput = getDouble();
@@ -68,15 +75,27 @@ public class Input {
 //            return userInput;
 //    }
 
+//    public double getDouble() {
+//             if (SCANNER.hasNextInt())
+//                return SCANNER.nextDouble();
+//             else {
+//                 System.out.println("invalid input; please enter an integer!");
+//                 SCANNER.nextLine();
+//                 return getDouble();
+//        }
+//    }
+
     public double getDouble() {
-        if (SCANNER.hasNextInt())
-            return SCANNER.nextDouble();
-        else {
-            System.out.println("invalid input; please enter an integer!");
-            SCANNER.nextLine();
+        System.out.print("Enter a Number: ");
+        String input = this.getString();
+        try {
+            return Double.valueOf(input);
+        } catch (Exception e) {
+            System.out.println("invalid input");
             return getDouble();
+        }
         }
     }
 
 
-}
+
