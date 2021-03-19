@@ -4,7 +4,10 @@
 # IntelliJ
 .idea/*
 *.iml
+grades
 
 # Compiled output
 *.class
 out/*
+
+
