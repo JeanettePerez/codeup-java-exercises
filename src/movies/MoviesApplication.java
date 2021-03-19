@@ -2,7 +2,7 @@ package movies;
 import com.sun.security.jgss.GSSUtil;
 import util.Input;
 
-public class MovieApplication {
+public class MoviesApplication {
 
     public static void main(String[] args) {
         // Movie.displayMovies(); // my solution
