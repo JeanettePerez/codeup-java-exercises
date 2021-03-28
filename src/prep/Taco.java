@@ -1,6 +1,6 @@
 package prep;
 
-public class Taco extends Food{
+public class Taco extends Food {
     private boolean isSpicy;
     private String typeOfMeat;
 
@@ -23,4 +23,5 @@ public class Taco extends Food{
     public void setTypeOfMeat(String typeOfMeat) {
         this.typeOfMeat = typeOfMeat;
     }
+
 }
