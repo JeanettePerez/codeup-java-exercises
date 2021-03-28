@@ -18,6 +18,21 @@ public class Arithmetic {
         return number1 * number2;
     }
 
+    public static int sum1(int[] numbers){
+        int sum = 0;
+        for(int number : numbers)
+            sum += sum + number;
+
+        return sum;
+    }
+    public static double average1(int[] numbers) {
+        int sum = sum1(numbers);
+        return sum;
+    }
+
+
+
+
     public static double average(double[] numArray) {
         double sum = 0;
         for (double number : numArray)
