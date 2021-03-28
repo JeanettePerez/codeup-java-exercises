@@ -1,6 +1,9 @@
 package prep;
 
-public class Food {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Food implements Consumable {
     private String name;
     private String description;
     private int calories;
@@ -10,9 +13,12 @@ public class Food {
         this.name = name;
         this.description = description;
         this.calories = calories;
-
-        if(this.name.equals(null) | this.description.equals(null) | this.calories == -1)
-             throw new IllegalArgumentException("results are null");
+        if(name == null || name.equals(""))
+             throw new IllegalArgumentException(String.format("The argument %s cannot be null or empty", name));
+        if(description== null || description.equals(""))
+            throw new IllegalArgumentException(String.format("The argument %s cannot be null or empty", description));
+        if(calories <= 0)
+            throw new IllegalArgumentException(String.format("The argument %s cannot be null or empty", calories));
     }
 
     public String getName() {
@@ -37,5 +43,16 @@ public class Food {
 
     public void setCalories(int calories) {
         this.calories = calories;
+    }
+
+
+    @Override
+    public void consume() {
+        System.out.printf("i love %s ", name);
+    }
+
+    @Override
+    public ArrayList<String> getFullDescription() {
+        return null;
     }
 }
