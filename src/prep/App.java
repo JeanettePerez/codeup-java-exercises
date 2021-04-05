@@ -22,8 +22,8 @@ public class App {
 //        double average = Arithmetic.average(new double[]{1, 2, 3, 4});
 //        System.out.println(average);
        // ========= Activity 2 =========
-        var foods = new ArrayList<>();
-       foods.add(new Pizza())
+//        var foods = new ArrayList<>();
+//       foods.add(new Pizza())
 
 
 
